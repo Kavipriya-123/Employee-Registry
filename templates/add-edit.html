@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${employee?? ? 'Edit' : 'Add'} Employee</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <h1>${employee?? ? 'Edit' : 'Add'} Employee</h1>
+
+  <form id="employee-form">
+    <input type="hidden" id="emp-id" value="${employee?if_exists?then(employee.id, '')}" />
+    <label>First Name:
+      <input type="text" id="firstName" value="${employee?if_exists?then(employee.firstName, '')}" required>
+    </label>
+    <label>Last Name:
+      <input type="text" id="lastName" value="${employee?if_exists?then(employee.lastName, '')}" required>
+    </label>
+    <label>Email:
+      <input type="email" id="email" value="${employee?if_exists?then(employee.email, '')}" required>
+    </label>
+    <label>Department:
+      <input type="text" id="department" value="${employee?if_exists?then(employee.department, '')}" required>
+    </label>
+    <label>Role:
+      <input type="text" id="role" value="${employee?if_exists?then(employee.role, '')}" required>
+    </label>
+    <div class="form-actions">
+      <button type="submit">${employee?? ? 'Update' : 'Save'}</button>
+      <button type="button" onclick="window.location.href='index.ftlh'">Cancel</button>
+    </div>
+  </form>
+
+  <script src="../static/js/data.js"></script>
+  <script src="../static/js/app.js"></script>
+</body>
+</html>

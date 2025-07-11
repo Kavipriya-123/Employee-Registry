@@ -1,0 +1,26 @@
+
+let employees = [
+  { id: 1, firstName: 'John', lastName: 'Doe', email: 'john.doe@example.com', department: 'HR', role: 'Manager' },
+  { id: 2, firstName: 'Jane', lastName: 'Smith', email: 'jane.smith@example.com', department: 'IT', role: 'Developer' },
+  { id: 3, firstName: 'Alex', lastName: 'Brown', email: 'alex.brown@example.com', department: 'Design', role: 'Designer' },
+  { id: 4, firstName: 'Emily', lastName: 'Clark', email: 'emily.clark@example.com', department: 'Marketing', role: 'Coordinator' },
+  { id: 5, firstName: 'Michael', lastName: 'Johnson', email: 'michael.johnson@example.com', department: 'Finance', role: 'Analyst' },
+  { id: 6, firstName: 'Sarah', lastName: 'Lee', email: 'sarah.lee@example.com', department: 'IT', role: 'Support' },
+  { id: 7, firstName: 'David', lastName: 'Wilson', email: 'david.wilson@example.com', department: 'HR', role: 'Recruiter' },
+  { id: 8, firstName: 'Laura', lastName: 'Kim', email: 'laura.kim@example.com', department: 'Design', role: 'UX Designer' },
+  { id: 9, firstName: 'James', lastName: 'Anderson', email: 'james.anderson@example.com', department: 'Operations', role: 'Supervisor' },
+  { id: 10, firstName: 'Olivia', lastName: 'Taylor', email: 'olivia.taylor@example.com', department: 'Marketing', role: 'Manager' },
+  { id: 11, firstName: 'Daniel', lastName: 'Thomas', email: 'daniel.thomas@example.com', department: 'Finance', role: 'Accountant' },
+  { id: 12, firstName: 'Sophia', lastName: 'Martin', email: 'sophia.martin@example.com', department: 'IT', role: 'Developer' },
+  { id: 13, firstName: 'Matthew', lastName: 'Jackson', email: 'matthew.jackson@example.com', department: 'Operations', role: 'Coordinator' },
+  { id: 14, firstName: 'Grace', lastName: 'White', email: 'grace.white@example.com', department: 'HR', role: 'Assistant' },
+  { id: 15, firstName: 'Andrew', lastName: 'Harris', email: 'andrew.harris@example.com', department: 'Design', role: 'Illustrator' },
+  { id: 16, firstName: 'Chloe', lastName: 'Martin', email: 'chloe.martin@example.com', department: 'Marketing', role: 'Specialist' },
+  { id: 17, firstName: 'Joshua', lastName: 'Thompson', email: 'joshua.thompson@example.com', department: 'Finance', role: 'Auditor' },
+  { id: 18, firstName: 'Hannah', lastName: 'Garcia', email: 'hannah.garcia@example.com', department: 'IT', role: 'Engineer' },
+  { id: 19, firstName: 'Ethan', lastName: 'Martinez', email: 'ethan.martinez@example.com', department: 'Operations', role: 'Manager' },
+  { id: 20, firstName: 'Mia', lastName: 'Robinson', email: 'mia.robinson@example.com', department: 'HR', role: 'Coordinator' },
+  { id: 21, firstName: 'Ryan', lastName: 'Clark', email: 'ryan.clark@example.com', department: 'Design', role: 'Art Director' },
+  { id: 22, firstName: 'Natalie', lastName: 'Rodriguez', email: 'natalie.rodriguez@example.com', department: 'Marketing', role: 'Analyst' },
+  { id: 23, firstName: 'Brandon', lastName: 'Lewis', email: 'brandon.lewis@example.com', department: 'Finance', role: 'Consultant' }
+];

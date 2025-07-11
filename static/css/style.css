@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+header, main {
+  max-width: 960px;
+  margin: auto;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.toolbar input,
+.toolbar select,
+.toolbar button {
+  padding: 8px;
+}
+
+/* Employee list */
+#employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+.employee-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.employee-card h3 {
+  margin-top: 0;
+}
+.employee-card button {
+  margin-right: 5px;
+  padding: 6px 10px;
+}
+
+/* Pagination */
+#pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+#pagination button {
+  margin: 0 3px;
+  padding: 6px 10px;
+}
+#pagination button.active {
+  font-weight: bold;
+  background: #007BFF;
+  color: white;
+  border: none;
+}
+
+/* Form */n#employee-form {
+  max-width: 400px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px auto;
+}
+#employee-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+#employee-form input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+.form-actions {
+  text-align: right;
+}
+.form-actions button {
+  margin-left: 5px;
+  padding: 6px 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+  }
+}

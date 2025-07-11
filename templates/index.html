@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Employee Directory</h1>
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="Search by name or email" />
+      <select id="sort-select">
+        <option value="">Sort By</option>
+        <option value="firstName">First Name</option>
+        <option value="department">Department</option>
+      </select>
+      <button onclick="showForm()">Add Employee</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="employee-list">
+      <#-- Freemarker loop: will render initial list if employees injected -->
+      <#if employees??>
+        <#list employees as e>
+          <div class="employee-card" data-id="${e.id}">
+            <h3>${e.firstName} ${e.lastName}</h3>
+            <p>Email: ${e.email}</p>
+            <p>Department: ${e.department}</p>
+            <p>Role: ${e.role}</p>
+            <button onclick="editEmployee(${e.id})">Edit</button>
+            <button onclick="deleteEmployee(${e.id})">Delete</button>
+          </div>
+        </#list>
+      </#if>
+    </div>
+    <div id="pagination"></div>
+  </main>
+
+  <form id="employee-form" style="display:none">
+    <h3 id="form-title">Add Employee</h3>
+    <input type="hidden" id="emp-id" />
+    <label>First Name: <input type="text" id="firstName" required /></label>
+    <label>Last Name: <input type="text" id="lastName" required /></label>
+    <label>Email: <input type="email" id="email" required /></label>
+    <label>Department: <input type="text" id="department" required /></label>
+    <label>Role: <input type="text" id="role" required /></label>
+    <div class="form-actions">
+      <button type="submit">Save</button>
+      <button type="button" onclick="hideForm()">Cancel</button>
+    </div>
+  </form>
+
+  <script src="../static/js/data.js"></script>
+  <script src="../static/js/app.js"></script>
+</body>
+</html>
